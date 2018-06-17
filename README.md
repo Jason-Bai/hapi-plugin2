@@ -1,16 +1,16 @@
-# hapi-register
+# hapi-plugin2
 
 Plugin loader for [hapi](https://github.com/spumko/hapi), inspired by https://github.com/bsiddiqui/hapi-router.
 
 ## Hapi v17
 
-`hapi-register` requires Hapi v17.
+`hapi-plugin2` requires Hapi v17.
 
 ## Install
 
 ```bash
 // If you're using Hapi v17
-$ npm i -S hapi-register
+$ npm i -S hapi-plugin2
 ```
 
 ## Usage
@@ -18,9 +18,9 @@ $ npm i -S hapi-register
 ```js
 try {
   await server.register({
-    plugin: require('hapi-register'),
+    plugin: require('hapi-plugin2'),
     options: {
-      registers: 'src/**/*Plugin.js' // uses glob to include files
+      plugins: 'src/**/*Plugin.js' // uses glob to include files
     }
   })
 } catch (err) {
@@ -31,12 +31,12 @@ try {
 
 ## Options
 
-##### registers
+##### plugins
 
 *Required* <br/>
 Type: `string` / `array`
 
-The [glob](https://github.com/Jason-Bai/hapi-register#glob-primer) pattern you would like to include
+The [glob](https://github.com/Jason-Bai/hapi-plugin2#glob-primer) pattern you would like to include
 
 ##### ignore
 

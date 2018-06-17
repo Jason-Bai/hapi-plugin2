@@ -20,7 +20,7 @@ lab.describe('hapi-register', () => {
 
   lab.test('can take an array of register no patterns', async () => {
     await register({
-      registers: [
+      plugins: [
         'test/plugins/hapi-router.js'
       ]
     })
@@ -30,7 +30,7 @@ lab.describe('hapi-register', () => {
 
   lab.test('can take an array of register no patterns with cwd', async () => {
     await register({
-      registers: [
+      plugins: [
         'test/plugins/hapi-router2.js'
       ],
       cwd: process.cwd()
