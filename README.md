@@ -36,7 +36,7 @@ try {
 *Required* <br/>
 Type: `string` / `array`
 
-The [glob](https://github.com/Jason-Bai/hapi-plugin2#glob-primer) pattern you would like to include
+The [glob](https://github.com/Jason-Bai/hapi-plugin2#glob-primer) pattern you would like to include, file extension must special, default .js
 
 ##### ignore
 
@@ -51,11 +51,11 @@ Type: `string`
 The current working directory in which to search (defaults to `process.cwd()`)
 
 
-## Specifying Routes
+## Specifying Plugins
 
-Any files that match your routes glob will be loaded
+Any files that match your plugins glob will be loaded
 
-Example route file:
+Example plugin file:
 ```js
 module.exports = [
   'src/plugins/*Logger.js',
