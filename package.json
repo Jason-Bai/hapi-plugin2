@@ -1,0 +1,42 @@
+{
+  "name": "hapi-register",
+  "version": "1.0.0",
+  "description": "Opinionated register loader for hapi",
+  "main": "./lib",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "cast-array": "^1.0.1"
+  },
+  "peerDependencies": {
+    "hapi": "^17.0.0"
+  },
+  "devDependencies": {
+    "code": "^5.1.2",
+    "hapi": "^17.0.0",
+    "hapi-router": "^4.0.0",
+    "lab": "^15.1.2",
+    "standard": "^10.0.3"
+  },
+  "scripts": {
+    "test": "standard && lab -r console -o stdout -r lcov -o lcov.info -v -C -a code -m 5000",
+    "test-dirty": "lab -v -C -a code -m 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason-Bai/hapi-register.git"
+  },
+  "keywords": [
+    "hapi",
+    "register"
+  ],
+  "author": "Jason Bai boybai1213@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason-Bai/hapi-register/issues"
+  },
+  "homepage": "https://github.com/Jason-Bai/hapi-register#readme"
+}
