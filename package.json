@@ -1,5 +1,5 @@
 {
-  "name": "hapi-register",
+  "name": "hapi-plugin2",
   "version": "1.0.0",
   "description": "Opinionated register loader for hapi",
   "main": "./lib",

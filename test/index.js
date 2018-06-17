@@ -25,7 +25,7 @@ lab.describe('hapi-register', () => {
       ]
     })
 
-    expect(Object.keys(server.registrations)).to.only.include(['hapi-register', 'hapi-router'])
+    expect(Object.keys(server.registrations)).to.only.include(['hapi-plugin2', 'hapi-router'])
   })
 
   lab.test('can take an array of register no patterns with cwd', async () => {
@@ -36,6 +36,6 @@ lab.describe('hapi-register', () => {
       cwd: process.cwd()
     })
 
-    expect(Object.keys(server.registrations)).to.only.include(['hapi-register', 'hapi-router'])
+    expect(Object.keys(server.registrations)).to.only.include(['hapi-plugin2', 'hapi-router'])
   })
 })
